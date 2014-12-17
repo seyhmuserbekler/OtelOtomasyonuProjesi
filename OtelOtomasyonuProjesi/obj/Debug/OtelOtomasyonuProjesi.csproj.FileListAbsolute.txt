@@ -1,0 +1,20 @@
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\bin\Debug\OtelOtomasyonuProjesi.exe
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\bin\Debug\OtelOtomasyonuProjesi.pdb
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.csprojResolveAssemblyReference.cache
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form1.resources
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form2.resources
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Properties.Resources.resources
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.csproj.GenerateResource.Cache
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.exe
+c:\users\erbekler seyhmus\documents\visual studio 2012\Projects\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.pdb
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.exe
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.pdb
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\bin\Debug\OtelOtomasyonuProjesi.exe
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\bin\Debug\OtelOtomasyonuProjesi.pdb
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.csprojResolveAssemblyReference.cache
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form1.resources
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form2.resources
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Properties.Resources.resources
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.csproj.GenerateResource.Cache
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form3.resources
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form4.resources
