@@ -18,18 +18,18 @@ namespace OtelOtomasyonuProjesi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text=="admin" && textBox2.Text=="123")
-            {
+            //if (textBox1.Text=="admin" && textBox2.Text=="123")
+            //{
                 
                 Form2 frm2 = new Form2();
                 frm2.Show();
                 this.Hide();
                
-            }
-            else
-            {
-                MessageBox.Show("şifre veya kullanıcı adı hatalı!!");
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("şifre veya kullanıcı adı hatalı!!");
+            //}
         }
 
         private void Form1_Load(object sender, EventArgs e)

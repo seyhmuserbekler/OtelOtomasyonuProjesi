@@ -15,5 +15,17 @@ namespace OtelOtomasyonuProjesi
         {
             InitializeComponent();
         }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            Form4 frm4 = new Form4();
+            frm4.Show();
+            this.Hide();
+        }
     }
 }

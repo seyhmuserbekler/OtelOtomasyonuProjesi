@@ -18,3 +18,4 @@ C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\ob
 C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.csproj.GenerateResource.Cache
 C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form3.resources
 C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form4.resources
+C:\Users\ERBEKLER SEYHMUS\Desktop\OtelOtomasyonuProjesi\OtelOtomasyonuProjesi\obj\Debug\OtelOtomasyonuProjesi.Form5.resources

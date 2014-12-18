@@ -18,6 +18,7 @@ namespace OtelOtomasyonuProjesi
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
@@ -44,6 +45,25 @@ namespace OtelOtomasyonuProjesi
         {
             Form4 frm4 = new Form4();
             frm4.Show();
+        }
+
+        private void DoluOdalar_Click(object sender, EventArgs e)
+        {
+            Form4 frm4 = new Form4();
+            frm4.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = DateTime.Now.ToShortDateString();
+            label4.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void MusteriAra_Click(object sender, EventArgs e)
+        {
+            Form5 frm5 = new Form5();
+            frm5.Show();
+            this.Hide();
         }
     }
 }
