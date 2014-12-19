@@ -19,6 +19,10 @@ namespace OtelOtomasyonuProjesi
         }
         SqlConnection baglanti = new SqlConnection("Data Source=SEYHMUS\\SQLEXPRESS;Initial Catalog=OtelOtomasyonuSql;Integrated Security=true");
         DataTable tablo=new DataTable();
+        public SqlCommand kmt = new SqlCommand();
+        public SqlDataAdapter adtr = new SqlDataAdapter();
+        public DataSet dtst = new DataSet();
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -52,10 +56,36 @@ namespace OtelOtomasyonuProjesi
             {
                 baglanti.Open();
             }
-            SqlCommand komut = new SqlCommand("SELECT * FROM Musteriler ", baglanti);
-            SqlDataAdapter adapter = new SqlDataAdapter(komut);
-            DataTable veri = new DataTable();
-            adapter.Fill(veri);
+             kmt = new SqlCommand("SELECT * FROM Musteriler ", baglanti);
+            SqlDataAdapter adapter = new SqlDataAdapter(kmt);
+
+            adapter.Fill(tablo);
+
+
+            if (textBox3.Text != "" && textBox1.Text != "" && comboBox1.Text != "")
+            {
+                //baglanti.Open();
+                kmt.Connection = baglanti;
+                kmt.CommandText = "INSERT INTO Musteriler(TcKimlik,Ad,Soyad,Telefon,Cinsiyet) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox4.Text + "', '"+textBox3.Text+"' ,'" + comboBox1.Text + "') ";
+                kmt.ExecuteNonQuery();
+                kmt.CommandText = "INSERT INTO Odalar(Isim,Limit,Durum) VALUES ('" + comboBox4.Text + "','"+comboBox3.Text+"','"+comboBox2.Text+"') ";
+                kmt.ExecuteNonQuery();
+                kmt.CommandText = "DELETE from HangiOdadaKimVar WHERE OdaID='" + comboBox3.Text + "'";
+                kmt.ExecuteNonQuery();
+                kmt.Dispose();
+                baglanti.Close();
+                comboBox1.Items.Clear();
+                textBox1.Clear(); textBox2.Clear(); textBox3.Clear();
+                textBox2.Clear();
+                comboBox1.Text = "";
+                
+
+                MessageBox.Show("Odanız Ayrılmıştır!!! ");
+            }
+            else
+            {
+                MessageBox.Show("Boş Alanları Doldurunuz!!!");
+            }
 
 
 
