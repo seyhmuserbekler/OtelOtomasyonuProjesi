@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -56,7 +56,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,18 +64,18 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button27);
-            this.groupBox1.Controls.Add(this.button26);
+            this.groupBox1.Controls.Add(this.button20);
+            this.groupBox1.Controls.Add(this.button19);
             this.groupBox1.Controls.Add(this.button25);
             this.groupBox1.Controls.Add(this.button24);
             this.groupBox1.Controls.Add(this.button23);
             this.groupBox1.Controls.Add(this.button22);
             this.groupBox1.Controls.Add(this.button21);
-            this.groupBox1.Controls.Add(this.button20);
-            this.groupBox1.Controls.Add(this.button19);
             this.groupBox1.Controls.Add(this.button18);
             this.groupBox1.Controls.Add(this.button17);
             this.groupBox1.Controls.Add(this.button16);
+            this.groupBox1.Controls.Add(this.button27);
+            this.groupBox1.Controls.Add(this.button26);
             this.groupBox1.Controls.Add(this.button15);
             this.groupBox1.Controls.Add(this.button14);
             this.groupBox1.Controls.Add(this.button13);
@@ -99,25 +98,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Odalar";
             // 
-            // button27
+            // button20
             // 
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button27.Location = new System.Drawing.Point(114, 186);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(105, 79);
-            this.button27.TabIndex = 26;
-            this.button27.Text = "Oda No:20";
-            this.button27.UseVisualStyleBackColor = true;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button20.Location = new System.Drawing.Point(114, 186);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(105, 79);
+            this.button20.TabIndex = 26;
+            this.button20.Text = "Oda No:20";
+            this.button20.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // button19
             // 
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button26.Location = new System.Drawing.Point(3, 186);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(105, 79);
-            this.button26.TabIndex = 25;
-            this.button26.Text = "Oda No:19";
-            this.button26.UseVisualStyleBackColor = true;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button19.Location = new System.Drawing.Point(3, 186);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(105, 79);
+            this.button19.TabIndex = 25;
+            this.button19.Text = "Oda No:19";
+            this.button19.UseVisualStyleBackColor = true;
             // 
             // button25
             // 
@@ -169,55 +168,55 @@
             this.button21.Text = "Oda No:21";
             this.button21.UseVisualStyleBackColor = true;
             // 
-            // button20
-            // 
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button20.Location = new System.Drawing.Point(891, 101);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(105, 79);
-            this.button20.TabIndex = 19;
-            this.button20.Text = "Oda No:18";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button19.Location = new System.Drawing.Point(780, 101);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(105, 79);
-            this.button19.TabIndex = 18;
-            this.button19.Text = "Oda No:17";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button18.Location = new System.Drawing.Point(669, 101);
+            this.button18.Location = new System.Drawing.Point(891, 101);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(105, 79);
-            this.button18.TabIndex = 17;
-            this.button18.Text = "Oda No:16";
+            this.button18.TabIndex = 19;
+            this.button18.Text = "Oda No:18";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button17.Location = new System.Drawing.Point(891, 186);
+            this.button17.Location = new System.Drawing.Point(780, 101);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(105, 79);
-            this.button17.TabIndex = 16;
-            this.button17.Text = "Oda No:27";
+            this.button17.TabIndex = 18;
+            this.button17.Text = "Oda No:17";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button16.Location = new System.Drawing.Point(780, 186);
+            this.button16.Location = new System.Drawing.Point(669, 101);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(105, 79);
-            this.button16.TabIndex = 15;
-            this.button16.Text = "Oda No:26";
+            this.button16.TabIndex = 17;
+            this.button16.Text = "Oda No:16";
             this.button16.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button27.Location = new System.Drawing.Point(891, 186);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(105, 79);
+            this.button27.TabIndex = 16;
+            this.button27.Text = "Oda No:27";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button26.Location = new System.Drawing.Point(780, 186);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(105, 79);
+            this.button26.TabIndex = 15;
+            this.button26.Text = "Oda No:26";
+            this.button26.UseVisualStyleBackColor = true;
             // 
             // button15
             // 
@@ -362,27 +361,17 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(3, 16);
+            this.button1.Location = new System.Drawing.Point(3, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 79);
             this.button1.TabIndex = 0;
             this.button1.Text = "Oda No:1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button28
-            // 
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button28.Location = new System.Drawing.Point(0, 292);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(116, 53);
-            this.button28.TabIndex = 1;
-            this.button28.Text = "Oda Çıkışı ";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
             // button29
             // 
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button29.Location = new System.Drawing.Point(134, 292);
+            this.button29.Location = new System.Drawing.Point(0, 292);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(127, 53);
             this.button29.TabIndex = 2;
@@ -393,7 +382,7 @@
             // button30
             // 
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button30.Location = new System.Drawing.Point(287, 292);
+            this.button30.Location = new System.Drawing.Point(153, 292);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(125, 53);
             this.button30.TabIndex = 3;
@@ -422,10 +411,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button29);
-            this.Controls.Add(this.button28);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form3";
             this.Text = " Oda Bilgi Sistemi";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -435,18 +424,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
@@ -462,7 +451,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Label label1;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -40,6 +41,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -54,11 +57,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
+            this.otelOtomasyonuSqlDataSet = new OtelOtomasyonuProjesi.OtelOtomasyonuSqlDataSet();
+            this.odalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.odalarTableAdapter = new OtelOtomasyonuProjesi.OtelOtomasyonuSqlDataSetTableAdapters.OdalarTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otelOtomasyonuSqlDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odalarBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -188,10 +194,28 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(283, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(293, 229);
+            this.groupBox2.Size = new System.Drawing.Size(314, 229);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Oda Bilgileri";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(118, 179);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(176, 23);
+            this.dateTimePicker2.TabIndex = 15;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(7, 176);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 25);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Çıkış Tarihi";
             // 
             // comboBox4
             // 
@@ -200,9 +224,7 @@
             this.comboBox4.Items.AddRange(new object[] {
             "1",
             "2",
-            "3",
-            "4",
-            "5"});
+            "3"});
             this.comboBox4.Location = new System.Drawing.Point(133, 19);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(135, 24);
@@ -212,34 +234,6 @@
             // 
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27"});
             this.comboBox3.Location = new System.Drawing.Point(133, 60);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(135, 24);
@@ -272,6 +266,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(135, 24);
             this.comboBox2.TabIndex = 10;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -351,6 +346,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Sil";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -374,30 +370,26 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dateTimePicker2
+            // otelOtomasyonuSqlDataSet
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(118, 179);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(176, 23);
-            this.dateTimePicker2.TabIndex = 15;
+            this.otelOtomasyonuSqlDataSet.DataSetName = "OtelOtomasyonuSqlDataSet";
+            this.otelOtomasyonuSqlDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label10
+            // odalarBindingSource
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(7, 176);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 25);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Çıkış Tarihi";
+            this.odalarBindingSource.DataMember = "Odalar";
+            this.odalarBindingSource.DataSource = this.otelOtomasyonuSqlDataSet;
+            // 
+            // odalarTableAdapter
+            // 
+            this.odalarTableAdapter.ClearBeforeFill = true;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(576, 499);
+            this.ClientSize = new System.Drawing.Size(597, 500);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -414,6 +406,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otelOtomasyonuSqlDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odalarBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,5 +442,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label10;
+        private OtelOtomasyonuSqlDataSet otelOtomasyonuSqlDataSet;
+        private System.Windows.Forms.BindingSource odalarBindingSource;
+        private OtelOtomasyonuSqlDataSetTableAdapters.OdalarTableAdapter odalarTableAdapter;
     }
 }
