@@ -17,6 +17,7 @@ namespace OtelOtomasyonuProjesi
         {
             InitializeComponent();
         }
+
         SqlConnection baglanti = new SqlConnection("Data Source=SEYHMUS\\SQLEXPRESS;Initial Catalog=OtelOtomasyonuSql;Integrated Security=true");
         DataTable tablo=new DataTable();
         public SqlCommand kmt = new SqlCommand();
@@ -41,23 +42,19 @@ namespace OtelOtomasyonuProjesi
        
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'otelOtomasyonuSqlDataSet.Odalar' table. You can move, or remove it, as needed.
-            this.odalarTableAdapter.Fill(this.otelOtomasyonuSqlDataSet.Odalar);
-            adtr = new SqlDataAdapter("select * from Musteriler",baglanti);
-            adtr.Fill(tablo);
-            dataGridView1.DataSource = tablo;
+           
+            tabloDoldur();
 
-            DataTable tablo2 = new DataTable();
-            adtr = new SqlDataAdapter("select ID from Odalar where Durum='bos'", baglanti);
-            adtr.Fill(tablo2);
-            comboBox3.DataSource = tablo2;
-            comboBox3.DisplayMember = "ID";
-            comboBox3.ValueMember = "ID";
 
-            comboBox3.SelectedText = " ";
         }
 
-
+        void tabloDoldur()
+        {
+            this.odalarTableAdapter.Fill(this.otelOtomasyonuSqlDataSet.Odalar);
+            adtr = new SqlDataAdapter("select * from Musteriler", baglanti);
+            adtr.Fill(tablo);
+            dataGridView1.DataSource = tablo;
+        }
 
 
         private void ButonKaydet_Click(object sender, EventArgs e)
@@ -84,11 +81,16 @@ namespace OtelOtomasyonuProjesi
                 kmt.ExecuteNonQuery();
                 kmt.Dispose();
                 baglanti.Close();
-                comboBox1.Items.Clear();
-                textBox1.Clear(); textBox2.Clear(); textBox3.Clear();
-                textBox2.Clear();
+
                 comboBox1.Text = "";
-                
+                comboBox2.Text = "";
+                comboBox3.Text = "";
+                comboBox4.Text = "";
+                textBox1.Clear(); 
+                textBox2.Clear(); 
+                textBox3.Clear();
+                comboBox1.Text = "";
+                textBox4.Clear();
                
                 MessageBox.Show("Odanız Ayrılmıştır! ");
             }
@@ -96,9 +98,6 @@ namespace OtelOtomasyonuProjesi
             {
                 MessageBox.Show("Boş Alanları Doldurunuz!");
             }
-
-
-
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -237,7 +236,10 @@ namespace OtelOtomasyonuProjesi
                 kmt.CommandText = "DELETE from Musteriler WHERE ID='" + ID + "'";
                 kmt.ExecuteNonQuery();
                 baglanti.Close();
+               
                 MessageBox.Show("Silme işlemi basarılı..");
+                tablo.Clear();
+                tabloDoldur();
 			break;
 		    }
 		    case DialogResult.No:
@@ -247,6 +249,55 @@ namespace OtelOtomasyonuProjesi
 	    }
             
 
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable tablo2 = new DataTable();
+            adtr = new SqlDataAdapter("select ID from Odalar where Durum='bos' and Limit='"+comboBox4.Text+"'", baglanti);
+            adtr.Fill(tablo2);
+            comboBox3.DataSource = tablo2;
+            comboBox3.DisplayMember = "ID";
+            comboBox3.ValueMember = "ID";
+        }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            dateTimePicker2.Value = dateTimePicker1.Value.AddDays(Convert.ToInt32(comboBox2.Text));
+        }
+
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            //MessageBox.Show(dataGridView1.CurrentRow.Cells[2].Value.ToString())
+            textBox1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            comboBox1.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+
+            textBox1.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string ID = textBox1.Text;
+            baglanti.Open();
+            kmt.Connection = baglanti;
+            kmt.CommandText = "UPDATE Musteriler SET Ad='" + textBox2.Text + "', Soyad='"+textBox4.Text+"', Telefon='"+textBox3.Text+"', Cinsiyet='"+comboBox1.Text+"' where TCKimlik='"+textBox1.Text+"'";
+            kmt.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Güncelleme işlemi basarılı..");
+
+            tablo.Clear();
+            tabloDoldur();
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox4.Text = "";
+            textBox3.Text = "";
+            comboBox1.Text = "";
+
+            textBox1.Enabled = true;
         }
 
     }

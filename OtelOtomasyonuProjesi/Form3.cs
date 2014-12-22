@@ -36,14 +36,16 @@ namespace OtelOtomasyonuProjesi
             this.Hide();
         }
 
+
         Button[] b = new Button[28];
 
 
-
         public static int oda = 0;
+
         private void tikla(object sender, EventArgs e)
         {
             Button b = (Button)sender;
+
             try
             {
                 Form6 frm6 = new Form6();

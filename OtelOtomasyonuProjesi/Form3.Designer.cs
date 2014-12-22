@@ -370,24 +370,26 @@
             // 
             // button29
             // 
+            this.button29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button29.Location = new System.Drawing.Point(0, 292);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(127, 53);
             this.button29.TabIndex = 2;
             this.button29.Text = "Geri";
-            this.button29.UseVisualStyleBackColor = true;
+            this.button29.UseVisualStyleBackColor = false;
             this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button30
             // 
+            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button30.Location = new System.Drawing.Point(153, 292);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(125, 53);
             this.button30.TabIndex = 3;
             this.button30.Text = "Çıkış";
-            this.button30.UseVisualStyleBackColor = true;
+            this.button30.UseVisualStyleBackColor = false;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // label1
