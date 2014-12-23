@@ -274,7 +274,7 @@
             // button28
             // 
             this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button28.Location = new System.Drawing.Point(3, 237);
+            this.button28.Location = new System.Drawing.Point(1, 237);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(116, 53);
             this.button28.TabIndex = 3;
@@ -285,7 +285,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(164, 237);
+            this.button1.Location = new System.Drawing.Point(134, 237);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 53);
             this.button1.TabIndex = 4;
@@ -296,7 +296,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(314, 237);
+            this.button2.Location = new System.Drawing.Point(271, 237);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 53);
             this.button2.TabIndex = 5;
@@ -309,14 +309,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(720, 289);
+            this.ClientSize = new System.Drawing.Size(658, 289);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form6";
-            this.Text = "Form6";
+            this.Text = "Oda Boşaltma Formu";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

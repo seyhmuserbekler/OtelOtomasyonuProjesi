@@ -26,12 +26,14 @@ namespace OtelOtomasyonuProjesi
         {
             Form3 frm3 = new Form3();
             frm3.Show();
+            this.Hide();
         }
 
         private void odaEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form3 frm3 = new Form3();
             frm3.Show();
+            this.Hide();
         }
 
         private void odalarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,12 +47,14 @@ namespace OtelOtomasyonuProjesi
         {
             Form4 frm4 = new Form4();
             frm4.Show();
+            this.Hide();
         }
 
         private void DoluOdalar_Click(object sender, EventArgs e)
         {
             Form4 frm4 = new Form4();
             frm4.Show();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

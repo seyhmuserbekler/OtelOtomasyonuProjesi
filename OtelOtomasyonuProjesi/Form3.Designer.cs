@@ -58,7 +58,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -370,9 +369,9 @@
             // 
             // button29
             // 
-            this.button29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button29.BackColor = System.Drawing.Color.IndianRed;
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button29.Location = new System.Drawing.Point(0, 292);
+            this.button29.Location = new System.Drawing.Point(8, 274);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(127, 53);
             this.button29.TabIndex = 2;
@@ -382,9 +381,9 @@
             // 
             // button30
             // 
-            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button30.BackColor = System.Drawing.Color.IndianRed;
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button30.Location = new System.Drawing.Point(153, 292);
+            this.button30.Location = new System.Drawing.Point(161, 274);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(125, 53);
             this.button30.TabIndex = 3;
@@ -392,25 +391,12 @@
             this.button30.UseVisualStyleBackColor = false;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(418, 297);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(580, 39);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nasıl Bulmak İstiyorsan Öyle Bırak...";
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1000, 346);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(1000, 327);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button29);
             this.Controls.Add(this.groupBox1);
@@ -419,7 +405,6 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -455,6 +440,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Label label1;
     }
 }

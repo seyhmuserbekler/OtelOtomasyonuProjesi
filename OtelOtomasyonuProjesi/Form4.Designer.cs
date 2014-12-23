@@ -312,6 +312,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSalmon;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 254);
             this.dataGridView1.Name = "dataGridView1";
@@ -321,46 +322,50 @@
             // 
             // ButonKaydet
             // 
+            this.ButonKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ButonKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ButonKaydet.Location = new System.Drawing.Point(0, 463);
             this.ButonKaydet.Name = "ButonKaydet";
             this.ButonKaydet.Size = new System.Drawing.Size(126, 37);
             this.ButonKaydet.TabIndex = 3;
             this.ButonKaydet.Text = "Kaydet";
-            this.ButonKaydet.UseVisualStyleBackColor = true;
+            this.ButonKaydet.UseVisualStyleBackColor = false;
             this.ButonKaydet.Click += new System.EventHandler(this.ButonKaydet_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(132, 463);
+            this.button2.Location = new System.Drawing.Point(124, 463);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 37);
+            this.button2.Size = new System.Drawing.Size(141, 37);
             this.button2.TabIndex = 5;
             this.button2.Text = "Sil";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.Location = new System.Drawing.Point(380, 463);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 37);
             this.button3.TabIndex = 6;
             this.button3.Text = "Geri";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(519, 463);
+            this.button4.Location = new System.Drawing.Point(511, 463);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 37);
+            this.button4.Size = new System.Drawing.Size(127, 37);
             this.button4.TabIndex = 7;
             this.button4.Text = "İleri";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // otelOtomasyonuSqlDataSet
@@ -379,21 +384,22 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(255, 463);
+            this.button1.Location = new System.Drawing.Point(253, 463);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 37);
+            this.button1.Size = new System.Drawing.Size(130, 37);
             this.button1.TabIndex = 8;
             this.button1.Text = "Güncelle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(650, 500);
+            this.BackColor = System.Drawing.Color.NavajoWhite;
+            this.ClientSize = new System.Drawing.Size(636, 500);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

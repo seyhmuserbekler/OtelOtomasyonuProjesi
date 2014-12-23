@@ -28,7 +28,7 @@ namespace OtelOtomasyonuProjesi
             int odaID = Form3.oda;
 
 
-            adtr = new SqlDataAdapter("select TCKimlik,Ad,Soyad,Telefon,Cinsiyet,Odalar.ID,Limit, GirisTarihi,CikisTarihi from Musteriler inner join  HangiOdadaKimVar  on Musteriler.TCKimlik=HangiOdadaKimVar.MusteriID inner join Odalar on Odalar.ID=HangiOdadaKimVar.OdaID where HangiOdadaKimVar.OdaID='"+odaID.ToString()+"'", baglanti);
+            adtr = new SqlDataAdapter("select TCKimlik,Ad,Soyad,Telefon,Cinsiyet,Odalar.ID,Limit, GirisTarihi,CikisTarihi from Musteriler inner join  HangiOdadaKimVar  on Musteriler.TCKimlik=HangiOdadaKimVar.MusteriID inner join Odalar on Odalar.ID=HangiOdadaKimVar.OdaID where HangiOdadaKimVar.OdaID='"+ odaID.ToString()+"'", baglanti);
             adtr.Fill(tablo);
 
 
@@ -45,10 +45,6 @@ namespace OtelOtomasyonuProjesi
            // gtarih.Text = tablo.Rows[0][7].ToString();
            // ctarih.Text = tablo.Rows[0][8].ToString();
 
-
-           
-
-            
         }
 
         private void button28_Click(object sender, EventArgs e)
@@ -59,11 +55,11 @@ namespace OtelOtomasyonuProjesi
             }
 
 
-             DialogResult result = MessageBox.Show("silmek istediğinizden emin misiniz?", "Sil",
+        DialogResult result = MessageBox.Show("Odayı boşaltmak istediğinizden emin misiniz?", "Sil",
 		MessageBoxButtons.YesNo);
-	    switch (result)
-	    {
-		case DialogResult.Yes:
+	       switch (result)
+	       {
+		     case DialogResult.Yes:
 		    {
 
 
@@ -81,14 +77,15 @@ namespace OtelOtomasyonuProjesi
             oda.Text = "";
             gtarih.Text = "";
             ctarih.Text = "";
-
+            this.Close();
             MessageBox.Show("Oda boşaltıldı");
             break;
             }
-        case DialogResult.No:
+                case DialogResult.No:
             {
                 break;
             }
+            
         }
 
         }

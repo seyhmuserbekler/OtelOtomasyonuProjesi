@@ -29,6 +29,8 @@ namespace OtelOtomasyonuProjesi
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Form2 frm2 = new Form2();
+            frm2.Show();
             this.Hide();
         }
 
@@ -71,7 +73,8 @@ namespace OtelOtomasyonuProjesi
 
             if (textBox3.Text != "" && textBox1.Text != "" && comboBox1.Text != "")
             {
-               
+
+                tabloDoldur();
                 kmt.Connection = baglanti;
                 kmt.CommandText = "INSERT INTO Musteriler(TcKimlik,Ad,Soyad,Telefon,Cinsiyet) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox4.Text + "', '"+textBox3.Text+"' ,'" + comboBox1.Text + "') ";
                 kmt.ExecuteNonQuery();
@@ -269,6 +272,7 @@ namespace OtelOtomasyonuProjesi
         private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //MessageBox.Show(dataGridView1.CurrentRow.Cells[2].Value.ToString())
+
             textBox1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             textBox2.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();

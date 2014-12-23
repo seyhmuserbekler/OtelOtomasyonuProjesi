@@ -41,35 +41,38 @@
             // 
             // TumOdalar
             // 
+            this.TumOdalar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.TumOdalar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TumOdalar.Location = new System.Drawing.Point(1, 387);
             this.TumOdalar.Name = "TumOdalar";
-            this.TumOdalar.Size = new System.Drawing.Size(150, 34);
+            this.TumOdalar.Size = new System.Drawing.Size(160, 34);
             this.TumOdalar.TabIndex = 0;
             this.TumOdalar.Text = "Tüm Odalar";
-            this.TumOdalar.UseVisualStyleBackColor = true;
+            this.TumOdalar.UseVisualStyleBackColor = false;
             this.TumOdalar.Click += new System.EventHandler(this.BosOdalar_Click);
             // 
             // DoluOdalar
             // 
+            this.DoluOdalar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.DoluOdalar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DoluOdalar.Location = new System.Drawing.Point(167, 387);
+            this.DoluOdalar.Location = new System.Drawing.Point(145, 387);
             this.DoluOdalar.Name = "DoluOdalar";
-            this.DoluOdalar.Size = new System.Drawing.Size(162, 34);
+            this.DoluOdalar.Size = new System.Drawing.Size(181, 34);
             this.DoluOdalar.TabIndex = 1;
             this.DoluOdalar.Text = "Müşteriler";
-            this.DoluOdalar.UseVisualStyleBackColor = true;
+            this.DoluOdalar.UseVisualStyleBackColor = false;
             this.DoluOdalar.Click += new System.EventHandler(this.DoluOdalar_Click);
             // 
             // MusteriAra
             // 
+            this.MusteriAra.BackColor = System.Drawing.Color.CornflowerBlue;
             this.MusteriAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MusteriAra.Location = new System.Drawing.Point(351, 387);
+            this.MusteriAra.Location = new System.Drawing.Point(324, 387);
             this.MusteriAra.Name = "MusteriAra";
-            this.MusteriAra.Size = new System.Drawing.Size(141, 34);
+            this.MusteriAra.Size = new System.Drawing.Size(168, 34);
             this.MusteriAra.TabIndex = 2;
             this.MusteriAra.Text = "Müşteri Ara";
-            this.MusteriAra.UseVisualStyleBackColor = true;
+            this.MusteriAra.UseVisualStyleBackColor = false;
             this.MusteriAra.Click += new System.EventHandler(this.MusteriAra_Click);
             // 
             // label1
