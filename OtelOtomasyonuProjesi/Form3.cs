@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 namespace OtelOtomasyonuProjesi
 {
     public partial class Form3 : Form
-    {
+        {
 
         SqlConnection baglanti = new SqlConnection("Data Source=SEYHMUS\\SQLEXPRESS;Initial Catalog=OtelOtomasyonuSql;Integrated Security=true");
         DataTable tablo = new DataTable();
@@ -62,8 +62,8 @@ namespace OtelOtomasyonuProjesi
             
         }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
+            private void Form3_Load(object sender, EventArgs e)
+              {
             adtr = new SqlDataAdapter("select ID from Odalar where Durum='dolu'", baglanti);
             adtr.Fill(tablo);
 
