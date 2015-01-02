@@ -36,7 +36,7 @@ namespace OtelOtomasyonuProjesi
 
            try
            {
-              SqlCommand komut = new SqlCommand("SELECT M.TCKimlik, M.Ad+' '+M.Soyad as AdSoyad, H.GirisTarihi, H.CikisTarihi, O.Isim FROM HangiOdadaKimVar as H LEFT JOIN Musteriler as M ON (H.MusteriID = M.ID) LEFT JOIN Odalar as O ON (H.OdaID = O.ID) WHERE M.TCKimlik = '"+Convert.ToString(textBox1.Text)+"'", baglanti);
+               SqlCommand komut = new SqlCommand("SELECT M.TCKimlik, M.Ad+' '+M.Soyad as AdSoyad, H.GirisTarihi, H.CikisTarihi, O.Isim FROM HangiOdadaKimVar as H LEFT JOIN Musteriler as M ON (H.MusteriID = M.TCKimlik) LEFT JOIN Odalar as O ON (H.OdaID = O.ID) WHERE M.TCKimlik = '" + Convert.ToString(textBox1.Text) + "'", baglanti);
 
                SqlDataAdapter adp = new SqlDataAdapter(komut);
 
@@ -62,6 +62,7 @@ namespace OtelOtomasyonuProjesi
                             item.SubItems.Add(satir["GirisTarihi"].ToString());
                             item.SubItems.Add(satir["GirisTarihi"].ToString());
                             item.SubItems.Add(satir["Isim"].ToString());
+
                             listView1.Items.Add(item);
                         }
                    }

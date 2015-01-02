@@ -31,13 +31,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.ButonGeri = new System.Windows.Forms.Button();
-            this.ButonCikis = new System.Windows.Forms.Button();
             this.TCKimlik = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Ad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Soyad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Telefon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Cinsiyet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ButonGeri = new System.Windows.Forms.Button();
+            this.ButonCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -56,7 +56,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(147, 14);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 36);
+            this.textBox1.Size = new System.Drawing.Size(246, 36);
             this.textBox1.TabIndex = 1;
             // 
             // listView1
@@ -73,6 +73,30 @@
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // TCKimlik
+            // 
+            this.TCKimlik.Text = "TC Kimlik";
+            this.TCKimlik.Width = 117;
+            // 
+            // Ad
+            // 
+            this.Ad.Text = "Ad";
+            this.Ad.Width = 108;
+            // 
+            // Soyad
+            // 
+            this.Soyad.Text = "Soyad";
+            this.Soyad.Width = 101;
+            // 
+            // Telefon
+            // 
+            this.Telefon.Text = "Telefon";
+            this.Telefon.Width = 107;
+            // 
+            // Cinsiyet
+            // 
+            this.Cinsiyet.Text = "Cinsiyet";
             // 
             // ButonGeri
             // 
@@ -96,32 +120,12 @@
             this.ButonCikis.UseVisualStyleBackColor = true;
             this.ButonCikis.Click += new System.EventHandler(this.ButonCikis_Click);
             // 
-            // TCKimlik
-            // 
-            this.TCKimlik.Text = "TC Kimlik";
-            // 
-            // Ad
-            // 
-            this.Ad.Text = "Ad";
-            // 
-            // Soyad
-            // 
-            this.Soyad.Text = "Soyad";
-            // 
-            // Telefon
-            // 
-            this.Telefon.Text = "Telefon";
-            // 
-            // Cinsiyet
-            // 
-            this.Cinsiyet.Text = "Cinsiyet";
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(498, 332);
+            this.ClientSize = new System.Drawing.Size(499, 332);
             this.Controls.Add(this.ButonCikis);
             this.Controls.Add(this.ButonGeri);
             this.Controls.Add(this.listView1);
